@@ -8,11 +8,11 @@
 
 ## Your API Hacking Lab
 
-APIsec.ai has hosted an API hacking lab that you can use to practice your skills.
+### APIsec.ai has hosted an API hacking lab that you can use to practice your skills.
 - crAPI can be found at http://crapi.apisec.ai/
 - vAPI can be found at http://vapi.apisec.ai/
 
-set up your own lab
+### set up your own lab
 - https://github.com/OWASP/crAPI
 - https://github.com/roottusk/vapi
 
