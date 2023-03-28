@@ -21,6 +21,7 @@ Also, subdomains can also be indicators of web APIs:
 - developer.target-name.com
 - test.target-name.com
 
-
+TruffleHog is a great tool for automatically discovering exposed secrets.
+- https://github.com/trufflesecurity/trufflehog
 
 
