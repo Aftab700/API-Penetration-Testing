@@ -34,8 +34,15 @@ TruffleHog is a great tool for automatically discovering exposed secrets.
   - https://github.com/assetnote/kiterunner
   - ` kr scan HTTP://127.0.0.1 -w ~/api/wordlists/data/kiterunner/routes-large.kite `
 
+## Authentication Attacks
 
+brute-force attacks:
+- creating targeted password lists
+  - https://github.com/sc0tfree/mentalist
+  - https://github.com/Mebus/cupp
 
+Password Spraying
+- combining a long list of users with a short list of targeted passwords.
 
 
 
