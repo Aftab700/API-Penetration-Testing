@@ -44,6 +44,15 @@ brute-force attacks:
 Password Spraying
 - combining a long list of users with a short list of targeted passwords.
 
+## JWT Attacks
+
+JWT.io is a free web JWT debugger
+- https://jwt.io/
+
+Automating JWT attacks with JWT_Tool
+- https://github.com/ticarpi/jwt_tool/wiki
+
+
 
 
 
