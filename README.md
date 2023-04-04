@@ -56,7 +56,7 @@ Automating JWT attacks with JWT_Tool
 
 - Find Resource IDs and Requests
 
-### Authorization Testing Strategy:
+#### Authorization Testing Strategy:
   1. Create a UserA account.
   2. Use the API and discover requests that involve resource IDs as UserA.
   3. Document requests that include resource IDs and should require authorization.
@@ -77,10 +77,22 @@ Automating JWT attacks with JWT_Tool
   - /api/test
 - Make sure to check out the path, parameters, and headers for any versioning information.
 
+## Mass Assignment Attacks
+> Mass Assignment vulnerabilities are present when an attacker is able to overwrite object properties that they should not be able to.
 
+One of the ways that you can discover mass assignment vulnerabilities by finding interesting parameters in API documentation and then adding those parameters to requests. Look for parameters involved in user account properties, critical functions, and administrative actions.
 
+Testing Account Registration for Mass Assignment
+- Try adding other key-values to the JSON POST body, such as:
+```
+"isadmin": true,
+"isadmin":"true",
+"admin": 1,
+"admin": true, 
+```
 
-
+- Fuzzing for Mass Assignment with Param Miner
+  - Right-click on a request that you would like to mine for parameters. Select Extensions > Param Miner > Guess params > Guess JSON parameter. 
 
 
 
