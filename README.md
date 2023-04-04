@@ -52,6 +52,38 @@ JWT.io is a free web JWT debugger
 Automating JWT attacks with JWT_Tool
 - https://github.com/ticarpi/jwt_tool/wiki
 
+## Exploiting API Authorization
+
+- Find Resource IDs and Requests
+
+### Authorization Testing Strategy:
+  1. Create a UserA account.
+  2. Use the API and discover requests that involve resource IDs as UserA.
+  3. Document requests that include resource IDs and should require authorization.
+  4. Create a UserB account.
+  5. Obtaining a valid UserB token and attempt to access UserA's resources.
+
+- Try changing request method.
+
+## Improper Assets Management
+> Testing for Improper Assets Management is all about discovering unsupported and non-production versions of an API
+
+- Non-production versions of an API include any version of the API that was not meant for end-user consumption. Non-production versions could include:
+  - api.test.target.com
+  - api.uat.target.com
+  - beta.api.com
+  - /api/private
+  - /api/partner
+  - /api/test
+- Make sure to check out the path, parameters, and headers for any versioning information.
+
+
+
+
+
+
+
+
 
 
 
