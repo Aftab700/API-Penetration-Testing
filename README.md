@@ -94,7 +94,12 @@ Testing Account Registration for Mass Assignment
 - Fuzzing for Mass Assignment with Param Miner
   - Right-click on a request that you would like to mine for parameters. Select Extensions > Param Miner > Guess params > Guess JSON parameter. 
 
+####  free tools to see request made to url:
 
+- http://webhook.site/
+- http://pingb.in/
+- https://requestbin.com/
+- https://canarytokens.org/
 
 
 
