@@ -31,7 +31,8 @@
 - [Insider PhD Everything API Hacking](https://www.youtube.com/playlist?list=PLbyncTkpno5HqX1h2MnV6Qt4wvTb8Mpol): Katie Paxton-Fear's playlist of all those great API hacking hits.
 - [Awesome API Security](https://github.com/arainho/awesome-api-security): All the API security things.
 
-
+### Courses
+- https://university.apisec.ai/
 
 
 
