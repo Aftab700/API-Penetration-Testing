@@ -219,4 +219,3 @@ https://github.com/0xInfection/Awesome-WAF#known-bypasses
 
 
 
-![](https://aftab700.pythonanywhere.com/api/github/API-Penetration-Testing)
