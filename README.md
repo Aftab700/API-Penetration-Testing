@@ -223,3 +223,6 @@ https://github.com/0xInfection/Awesome-WAF#known-bypasses
 
 ---
 <!-- GitAds-Verify: P9VOXRFWU1X3DLBYNTQKCYBLJES1OUWV -->
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=aftab700/api-penetration-testing@github)](https://gitads.dev/v1/ad-track?source=aftab700/api-penetration-testing@github)
+
